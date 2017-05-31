@@ -3,14 +3,15 @@
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 class City {
     public:
-        std::string name, population;
-        void set_values(std::string, std::string);
+        string name, population;
+        void set_values(string, string);
 };
 
-void City::set_values(std::string n, std::string p) {
+void City::set_values(string n, string p) {
     name = n;
     population = p;
 }

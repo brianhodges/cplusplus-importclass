@@ -4,16 +4,17 @@
 #include <iostream>
 #include <string>
 #include <vector>
+using namespace std;
 
 class Country {
     public:
-        std::string name, population;
+        string name, population;
         City best_city;
-        std::vector<std::string> states;
-        void set_values(std::string, std::string, City, std::vector<std::string>);
-        std::string pretty_states(void){
-            std::string result;
-            for(std::vector<std::string>::iterator it = states.begin(); it != states.end(); ++it) {
+        vector<string> states;
+        void set_values(string, string, City, vector<string>);
+        string pretty_states(void){
+            string result;
+            for(vector<string>::iterator it = states.begin(); it != states.end(); ++it) {
                 if(it != states.begin()) {
                     result += ", ";
                 }
@@ -23,7 +24,7 @@ class Country {
         }
 };
 
-void Country::set_values(std::string n, std::string p, City c, std::vector<std::string> s) {
+void Country::set_values(string n, string p, City c, vector<string> s) {
     name = n;
     population = p;
     best_city = c;
