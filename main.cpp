@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include <iterator>
-#include <iostream>
 #include "city.h"
 #include "country.h"
 using namespace std;
