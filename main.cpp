@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
 
     ofstream out_data("log.txt");
     out_data << endl;
-    for(int i = 0; i < sizeof(countries)/sizeof(countries[0]); i++) {
+    for (int i = 0; i < sizeof(countries)/sizeof(countries[0]); i++) {
         out_data << "Name: " << countries[i].name << endl;
         out_data << "Population: " << countries[i].population << endl;
         out_data << "Best States: " << countries[i].pretty_states() << endl;
